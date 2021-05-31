@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+@media (max-height: 875px) {
+    * {
+        font-size: 13px;
+    }
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #0A0C1C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+
+h1 {
+    font-size: 1.75rem;
+    font-family: 'Inter', 'sans-serif';
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h1 span {
+    color: #AB5CDB;
+    font-size: inherit;
+}
+
+.main-paragraph {
+    font-size: .9375rem;
+    font-weight: 200;
+    color: #FFFFFF;
+    font-family: 'Inter', 'sans-serif';
+    text-align: center;
+    line-height: 1.5625rem;
+    margin-top: 1rem;
+}
+
+.stat {
+    line-height: 25px;
+}
+
+.stat-number {
+    font-size: 1.5rem;
+    font-family: 'Inter', 'sans-serif';
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    line-height: 1.5625rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.stat-name {
+    font-family: 'Lexend Deca', 'sans-serif';
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: white;
+    opacity: .6;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/* Layout */
+
+.card {
+    background: #1B1937;
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    background-image: url('../images/image-header-desktop.jpg');
+    height: 35vh;
+    background-position: center;
+    background-size: cover;
+    background-color: #AB5CDB;
+    background-blend-mode: multiply;
+    border-radius: 10px 10px 0 0;
+    order: 1;
+    margin-bottom: 0;
+}
+
+.content {
+    order: 2;
+    padding: 2.5rem 2rem 2rem 2rem;
+}
+
+.stats {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.stat {
+    margin-top: 1.5rem;
+}
+
+.companies-stat {
+    margin-top: 0;
+}
+
+/* Desktop */
+
+@media (min-width: 1280px) {
+
+    h1 {
+        font-size: 2.25rem;
+        text-align: left;
+    }
+
+    .main-paragraph {
+        text-align: left;
+        width: 80%;
+        margin-bottom: 0;
+    }
+
+    .stats {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0;
+    }
+
+    .stat {
+        margin-top: 4.5rem;
+        text-align: left;
+    }
+
+    .card {
+        width: 70%;
+        max-width: 1100px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    .content {
+        padding: 4.5rem;
+        width: 55%;
+        order: -1;
+    }
+
+
+
+    .image {
+        width: 50%;
+        height: auto;
+        background-color: #AB5CDB;
+        background-blend-mode: multiply;
+        border-radius: 0 10px 10px 0;
+        order: 1;
+        margin-bottom: 0;
+    }
+
+}
